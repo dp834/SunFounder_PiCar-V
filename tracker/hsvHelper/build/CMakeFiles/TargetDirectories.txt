@@ -1,0 +1,3 @@
+/home/pi/Robot/tracker/hsvHelper/build/CMakeFiles/rebuild_cache.dir
+/home/pi/Robot/tracker/hsvHelper/build/CMakeFiles/edit_cache.dir
+/home/pi/Robot/tracker/hsvHelper/build/CMakeFiles/hsvHelper.dir

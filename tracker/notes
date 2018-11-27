@@ -1,0 +1,23 @@
+For turning command is 
+fwturn:<angle> (need to find min and max)
+url = "http://localhost:8000/run/?action=" + cmd;
+cmd can be 
+Back wheels:
+bwready | forward | backward | stop
+Front wheels:
+fwready | fwleft | fwright | fwstraight | fwturn:<angle>
+Camera:
+camready | camleft | camright | camup | camdown
+Speed:
+it's own command.
+url = "http://localhost:8000/run/?speed=" + <speed> (0 - 100)
+
+HSV COLOR RANGES:
+PINK POST IT:
+H 144-180
+S 32-167
+V 154-255
+
+H 36-180
+S 84-153
+V 131-255

@@ -35,7 +35,7 @@ class Camera(object):
 	def __init__(self, debug=False, bus_number=1, db="config"):
 		''' Init the servo channel '''
 		self.db = filedb.fileDB(db=db)
-		self.pan_offset = int(self.db.get('pan_offset', default_value=0))
+		self.pan_offset = int(self.db.get('pan_offset', default_value=-30))
 		self.tilt_offset = int(self.db.get('tilt_offset', default_value=0))
 
 		self.pan_servo = Servo.Servo(self.pan_channel, bus_number=bus_number, offset=self.pan_offset)

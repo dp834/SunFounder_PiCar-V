@@ -16,6 +16,8 @@ from picar import back_wheels, front_wheels
 from django.http import HttpResponse
 import picar
 
+print(picar.__file__)
+
 picar.setup()
 db_file = "/home/pi/SunFounder_PiCar-V/remote_control/remote_control/driver/config"
 fw = front_wheels.Front_Wheels(debug=False, db=db_file)
@@ -38,6 +40,7 @@ def run(request):
 	debug = ''
 	if 'action' in request.GET:
 		action = request.GET['action']
+
 		# ============== Back wheels =============
 		if action == 'bwready':
 			bw.ready()
